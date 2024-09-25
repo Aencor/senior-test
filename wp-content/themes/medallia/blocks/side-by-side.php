@@ -17,7 +17,7 @@ $order = 'md:order-first';
 if($layout == 'image-text'){ $order = 'md:order-last'; }
 ?>
 
-<section id="<?= $blockID; ?>" data-block="template-block" class="<?= $blockBG ?> side-by-side-block my-20 px-6 sm:px-0">
+<section id="<?= $blockID; ?>" data-block="template-block" class="<?= $blockBG ?> side-by-side-block py-20 px-6 sm:px-0">
  <div class="container xl mx-auto flex gap-20 flex-col md:flex-row md:items-center">
 	<div class="text-content order-first basis-2/4 <?= $order ?>">
 		<?= $blockTitle ? '<h2>' . $blockTitle . '</h2>' : null; ?>

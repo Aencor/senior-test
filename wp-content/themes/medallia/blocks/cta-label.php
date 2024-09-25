@@ -9,10 +9,17 @@ if($customID){
 }
 $ctaText = get_field('cta_text');
 $cta = get_field('cta');
+$stacked = get_field('stacked');
+
+$layout = 'flex-col md:flex-row text-center md:text-left justify-center md:justify-between items-center gap-5 md:gap-20';
+
+if($stacked){
+	$layout = 'flex-col text-center justify-center items-center gap-5';
+}
 ?>
 
 <section id="<?= $blockID; ?>" data-block="template-block" class="dark-bg cta-label-block py-5 px-4 sm:px-8">
-	<div class="container xl mx-auto flex flex-col md:flex-row text-center md:text-left justify-center md:justify-between items-center max-w-6xl gap-5 md:gap-20">
+	<div class="container xl mx-auto flex <?= $layout ?> max-w-6xl">
 		<div class="cta-text lead">
 			<h5><?= $ctaText ?></h5>
 		</div>

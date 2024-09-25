@@ -1,38 +1,40 @@
- // use a script tag or an external JS file
- document.addEventListener("DOMContentLoaded", (event) => {
-  gsap.registerPlugin(Flip,ScrollTrigger,ScrollToPlugin,TextPlugin)
-  // Side by Side animation
-  var sideTL = gsap.timeline();
-  var textContent = '.text-content',
-      imageContent = '.image-content';
+document.addEventListener("DOMContentLoaded", (event) => {
+  gsap.registerPlugin(Flip, ScrollTrigger, ScrollToPlugin, TextPlugin);
 
-  // GSAP Sets
-  gsap.set(textContent, {
-    y: -40, 
-    autoAlpha:0
-  });
+  // GSAP Sets y Animación
+  document.querySelectorAll('.side-by-side-block').forEach(block => {
+    var sideTL = gsap.timeline();
+    var textContent = block.querySelector('.text-content');
+    var imageContent = block.querySelector('.image-content');
 
-  gsap.set(imageContent, {
-    y: 40, 
-    autoAlpha:0
-  });
+    // GSAP Sets
+    gsap.set(textContent, {
+      y: -40, 
+      autoAlpha: 0
+    });
 
-  var sideAnimation = 
+    gsap.set(imageContent, {
+      y: 40, 
+      autoAlpha: 0
+    });
+
+    // Animación Side by Side
     sideTL
-    .to(textContent, {
-      y: 0,
-      autoAlpha: 1
-    })
-    .to(imageContent, {
-      y: 0,
-      autoAlpha: 1
-    })
+      .to(textContent, {
+        y: 0,
+        autoAlpha: 1
+      })
+      .to(imageContent, {
+        y: 0,
+        autoAlpha: 1
+      });
 
-  // Footer animation
-  ScrollTrigger.create ({
-    trigger : '.side-by-side-block',
-    start: 'center center',
-    end : 'bottom',
-    animation: footerAnimation
+    // ScrollTrigger para cada bloque
+    ScrollTrigger.create({
+      trigger: block,
+      start: 'top center',
+      end: 'bottom',
+      animation: sideTL
+    });
   });
- });
+});
