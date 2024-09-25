@@ -419,7 +419,7 @@ h5 {
   font-size: 18px !important;
   line-height: 22px;
   color: #071E3C;
-  font-weight: bold !important;
+  font-weight: 500 !important;
 }
 @media (min-width: 1024px) {
   h5 {
@@ -803,6 +803,9 @@ ol li:before {
   }
 }
 
+.global-footer {
+  border-top: 90px solid rgba(82, 177, 255, 0.3);
+}
 .global-footer .social-icons {
   display: flex;
   gap: 15px;
