@@ -234,7 +234,6 @@ blockquote .byline {
 
 p.lead {
   font-size: 16px !important;
-  font-weight: 500 !important;
   line-height: 22px;
 }
 @media (min-width: 1024px) {
@@ -344,7 +343,7 @@ h1 {
   font-size: 28px !important;
   line-height: 32px;
   color: #071E3C;
-  font-weight: bold !important;
+  font-weight: 500 !important;
 }
 @media (min-width: 1024px) {
   h1 {
@@ -363,7 +362,7 @@ h2 {
   font-size: 24px !important;
   line-height: 28px;
   color: #071E3C;
-  font-weight: bold !important;
+  font-weight: 500 !important;
 }
 @media (min-width: 1024px) {
   h2 {
@@ -382,7 +381,7 @@ h3 {
   font-size: 22px !important;
   line-height: 26px;
   color: #071E3C;
-  font-weight: bold !important;
+  font-weight: 500 !important;
 }
 @media (min-width: 1024px) {
   h3 {
@@ -401,7 +400,7 @@ h4 {
   font-size: 20px !important;
   line-height: 24px;
   color: #071E3C;
-  font-weight: bold !important;
+  font-weight: 500 !important;
 }
 @media (min-width: 1024px) {
   h4 {
@@ -753,7 +752,6 @@ ol li:before {
 }
 .hero-block .hero-text .h-content {
   font-size: 16px !important;
-  font-weight: 500 !important;
   line-height: 22px;
 }
 @media (min-width: 1024px) {
@@ -770,7 +768,6 @@ ol li:before {
 }
 .hero-block .hero-text .h-content p {
   font-size: 16px !important;
-  font-weight: 500 !important;
   line-height: 22px;
 }
 @media (min-width: 1024px) {
@@ -792,6 +789,18 @@ ol li:before {
 .cta-label-block .cta-text h5 {
   margin-bottom: 0 !important;
   color: #FFF;
+}
+
+.logo-grid-block .grid-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 30px;
+}
+@media (min-width: 1024px) {
+  .logo-grid-block .grid-item {
+    padding: 50px 70px;
+  }
 }
 
 .global-footer .social-icons {

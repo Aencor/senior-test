@@ -1,6 +1,6 @@
 <section id="styleguide" data-block="styleguide" class="py-5 px-4 sm:px-0">
     <header id="style-head">
-        <div class="container-fluid">
+        <div class="container xl mx-auto">
             <div class="row">
                 <div class="logotipo">
                     <a href="<?php bloginfo("url"); ?>">
@@ -13,7 +13,7 @@
         </div>
     </header>
     <div id="style-hero">
-        <div class="container-fluid">
+        <div class="container xl mx-auto">
             <div class="titles">
                 <h1>Style Guide</h1>
             </div>
@@ -23,7 +23,7 @@
     <?php while (have_rows("sections")): the_row();
       // Colors
       if (get_row_layout() == "colors"): ?>
-            <div class="container-fluid">
+            <div class="container xl mx-auto">
                 <div class="row">
                     <h3 class="section-title">Colors</h3>
                 </div>
@@ -73,7 +73,7 @@
         <?php
         // Typography
         elseif (get_row_layout() == "typography"): ?>
-            <div class="container-fluid">
+            <div class="container xl mx-auto">
                 <div class="row">
                     <h3 class="section-title">
                         Typography
@@ -248,7 +248,7 @@
                 <?php endif; ?>
             </div>
         <?php elseif (get_row_layout() == "buttons_and_links"): ?>
-            <div class="container-fluid">
+            <div class="container xl mx-auto">
                 <div class="row">
                     <h3 class="section-title">
                         Buttons & Links
@@ -262,7 +262,7 @@
               $bgStyle = get_sub_field("background_style");
               ?>
                 <div class="<?php echo $bgStyle . "-bg"; ?>">
-                    <div class="container-fluid">
+                    <div class="container xl mx-auto">
                         <div class="row">
                             <div class="col-md-3 col-xs-12">
                                 <h5>Primary</h5>

@@ -17,7 +17,6 @@
 
 @mixin make-lead {
 	font-size: 16px !important;
-	font-weight: 500 !important;
 	line-height: 22px;
 
 	@include media(tablet) {

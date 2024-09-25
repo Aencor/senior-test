@@ -26,6 +26,17 @@ function register_acf_block_types() {
 	]);
 
 
+	// Logo Grid
+	acf_register_block_type([
+		"name" => "logo-grid",
+		"title" => __("Logo Grid"),
+		"description" => __("Logo Grid"),
+		"render_template" => "blocks/logo-grid.php",
+    'enqueue_script'    => get_template_directory_uri() . '/assets/js/logo-grid.js',
+		"category" => "common",
+		"icon" => "editor-alignleft",
+		"keywords" => ["logo-grid"]
+	]);
 
 	// Side by Side
 	acf_register_block_type([
