@@ -21,10 +21,12 @@
 </head>
 
 <body <?php body_class(); ?>>
-  <header class="py-7 shadow relative z-50">
-    <div class="container xl flex justify-between mx-auto px-4 sm:px-0">
+  <header class="py-4 shadow relative z-50">
+    <div class="container xl flex justify-between items-center mx-auto px-4 sm:px-0">
       <a href="<?= get_bloginfo('url') ?>" class="logo">
         <img src="<?= get_bloginfo('template_url') ?>/assets/img/logos/medallia.svg" alt="<?= get_bloginfo('name') ?>">
       </a>
+
+      <a href="/styleguide" class="m-0 btn btn-large btn-primary">Styleguide</a>
     </div>
   </header>
